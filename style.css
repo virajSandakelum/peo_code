@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4, 9, 30, 0.72),rgba(4, 9, 30, 0.72)), url(./img/banner.png);   
+    background-position: center;
+    background-color:black;
+    background-size: cover;
+}
+
+nav ul{
+  
+    position: relative;
+    float: right;
+    top:-60px;
+    margin-right: 50px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    padding-top: 20px;
+    font-size: 19px;
+}
+
+nav ul li a:hover
+{
+   color: red;
+}
+
+nav ul li a::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background-color: red;
+    transition: 1s;
+    
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.discription{
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%,-50%);
+}
+
+.discription h1{
+    font-size: 50px;
+}
+
+.discription p{
+    font-size: 20px;
+}
+
+#submit-btn{
+    background:transparent;
+    width: 210px;
+    height: 50px;
+    font-size: 17px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+    border: 3px solid white;
+}
+
+#submit-btn:hover{
+    background: orangered;
+    transition: 0.6s;
+    border: 5px double yellow;
+    color: black;
+    font-weight: bold;
+}
+
+
+.course_discription{
+
+   
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.discription_box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+    margin:5% 10%
+    
+}
+
+.discription_1{
+    background-color:wheat;
+    padding: 15px;
+    line-height: 25px;
+    text-align: justify;
+    font-weight: 950px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.discription_2{
+    background-color:darkgrey;
+    padding: 15px;
+    line-height: 25px;
+    text-align: justify;
+    font-weight: 950px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.discription_3{
+    background-color:darkseagreen;
+    padding: 15px;
+    line-height: 25px;
+    text-align: justify;
+    font-weight: 950px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+
+
+.discription_1:hover{
+    box-shadow: 0 0 20px 20px rgba(0 , 0, 0, 0.2);
+}
+
+.discription_2:hover{
+    box-shadow: 0 0 20px 20px rgba(0 , 0, 0, 0.2);
+}
+
+.discription_3:hover{
+    box-shadow: 0 0 20px 20px rgba(0 , 0, 0, 0.2);
+}
+
+
+.discription_box h1{
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.campus h1,p{
+    text-align: center;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.row_campus{
+
+    display: flex;
+  
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.row_campus img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid red;
+    border-radius: 15px;
+}
+
+.campus_coloum img{
+    background: red;
+}
+
+
+
+.facilities{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin: 0 60px;
+}
+
+.row img{
+    width: 73%;
+    border-radius: 20px;
+    margin: 40px;
+   
+}
+
+.studentRemarks{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.people{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+    margin-top: 60px;
+    text-align: left;
+    
+    
+}
+
+.people div{
+    background-color: antiquewhite;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.people img{
+    width: 10%;
+    position: relative;
+    margin: 20px;
+    border-radius: 100%;
+    
+}
+
+.people p{
+    position: relative;
+    top: -70px;
+    text-align: justify;
+    margin-left: 70px;
+}
+
+.people h3{
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    right: 150px;
+}
+
+.people i{
+    color: orange;
+    position: relative;
+    left: 89px;
+    bottom: 20px;
+}
+
+.contact{
+    text-align: center;
+    margin:40px 0;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.589),rgba(0, 0, 0, 0.863),rgba(0, 0, 0, 0.801)) ,url(./img/banner2.jpg);
+    height: 350px;
+    width: 85%;
+    position: relative;
+    left: 7%;
+    border-radius: 15px;
+
+}
+
+.contact h3,input{
+    position: relative;
+    top: 30%;
+    color: white;
+}
+
+.contact h3{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.contact input{
+    background-color: transparent;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    
+}
+
+.contact input:hover{
+
+    background-color:tomato;
+    transition: 1s;
+    
+}
+
+.about{
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 100px;
+}
+
+.about h4{
+    margin-bottom: 20px;
+}
+
+.about >a  i{
+    font-size: 25px;
+    padding: 15px;
+    color: tomato;
+    
+}
+
+.about >a  i:hover{
+    color: black;
+}
+
+
+.about p{
+    margin-top: 20px;
+}
+
+
+
+@media(max-width:1004px){
+
+#S2{
+    display: block;
+    float: right;
+}
+    
+
+nav ul{
+    background-color:grey;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 10;
+    top: 50px;
+    left: -100%;
+    transition: 1s;
+}
+
+nav ul li{
+    display: block;
+    margin: 60px 0;
+}
+
+
+
+
+}
